@@ -76,11 +76,10 @@ add_edge(matrix, 100, 320, 0, 200, 320, 0);
 add_edge(matrix, 100, 340, 0, 100, 320, 0);
 add_edge(matrix, 200, 340, 0, 200, 320, 0);
 
-print_matrix(matrix)
-
 matrix_mult(identity, matrix)
 
 print_matrix(matrix)
+print("img.png")
 draw_lines( matrix, s, c )
 
 display(screen)
