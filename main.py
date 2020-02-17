@@ -83,6 +83,4 @@ matrix_mult(identity, matrix)
 print_matrix(matrix)
 draw_lines( matrix, s, c )
 
-save_ppm(s, 'binary.ppm')
-save_ppm_ascii(s, 'ascii.ppm')
-save_extension(s, 'img.png')
+display(screen)
