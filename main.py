@@ -6,22 +6,22 @@ import random
 
 s = new_screen()
 c = [ 0, 255, 0 ]
-matrix = new_matrix(4,8)
+matrix = new_matrix()
 #p1 45,390
 #p2 452,390
 #p3 468,26
 #p4 16,40
-'''matrix[0]=[45,450,20,1]
-matrix[1]=[452,378,20,1]
+#matrix[0]=[45,450,20,1]
+#matrix[1]=[452,378,20,1]
 #draw_lines(matrix,s,c)
-matrix[2]=[452,378,20,1]
-matrix[3]=[468,26,20,1]
+#matrix[2]=[452,378,20,1]
+#matrix[3]=[468,26,20,1]
 #draw_lines(matrix,s,c)
-matrix[4]=[468,26,20,1]
-matrix[5]=[16,40,20,1]
+#matrix[4]=[468,26,20,1]
+#matrix[5]=[16,40,20,1]
 
-matrix[6]=[16,40,20,1]
-matrix[7]=[45,450,20,1]
+#matrix[6]=[16,40,20,1]
+#matrix[7]=[45,450,20,1]
 
 def land(m,count):
     if(count==0):
@@ -49,10 +49,10 @@ def land(m,count):
             temp[6]=temp[5]
             temp[7]=temp[0]
             land(temp,count-1)
-land(matrix,6)
-c=[255,0,0]
-plot(s,c,0,0)
-'''
+#land(matrix,6)
+#c=[255,0,0]
+#plot(s,c,0,0)
+
 
 identity = new_matrix()
 ident(identity)
@@ -82,4 +82,6 @@ print_matrix(matrix)
 print("img.png")
 draw_lines( matrix, s, c )
 
-display(screen)
+display(s)
+
+save_extension(s,'img.png')
