@@ -32,6 +32,9 @@ def ident( matrix ):
 #multiply m1 by m2, modifying m2 to be the product
 #m1 * m2 -> m2
 def matrix_mult( m1, m2 ):
+    error="invalid multiplication \n"
+    if(len(m1)!=len(m2[0])):
+        return error
     temp=[]
     dot=0
     for col2 in range(len(m2)):
