@@ -13,17 +13,7 @@ print_matrix(matrix)
 #p2 452,390
 #p3 468,26
 #p4 16,40
-#matrix[0]=[45,450,20,1]
-#matrix[1]=[452,378,20,1]
-#draw_lines(matrix,s,c)
-#matrix[2]=[452,378,20,1]
-#matrix[3]=[468,26,20,1]
-#draw_lines(matrix,s,c)
-#matrix[4]=[468,26,20,1]
-#matrix[5]=[16,40,20,1]
 
-#matrix[6]=[16,40,20,1]
-#matrix[7]=[45,450,20,1]
 
 def land(m,count):
     if(count==0):
@@ -90,7 +80,23 @@ matrix_mult(identity, matrix)
 print_matrix(matrix)
 
 draw_lines( matrix, s, c )
+print("\n making new matrix, m3:\n")
+mat=new_matrix()
+mat[0]=[45,450,20,1]
+mat[1]=[452,378,20,1]
+#draw_lines(matrix,s,c)
+mat[2]=[452,378,20,1]
+mat[3]=[468,26,20,1]
+#draw_lines(matrix,s,c)
+#mat[4]=[468,26,20,1]
+#mat[5]=[16,40,20,1]
 
+#mat[6]=[16,40,20,1]
+#mat[7]=[45,450,20,1]
+print_matrix(mat)
+print("\n multiplyinh m3 and m1:\n")
+matrix_mult(mat,matrix)
+print_matrix(matrix)
 display(s)
 
 save_extension(s,'img.png')
