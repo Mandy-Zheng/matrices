@@ -37,7 +37,7 @@ def matrix_mult( m1, m2 ):
     for col2 in range(len(m2)):
         for col1 in range(len(m1)):
             for row1 in range(len(m1[0])):
-                dot+=m1[row1][col1]*m2[col2][col1]
+                dot+=m1[row1][col1]*m2[col2][row1]
             temp.append(dot)
             dot=0
         m2[col2]=temp

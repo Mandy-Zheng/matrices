@@ -82,11 +82,11 @@ print_matrix(matrix)
 draw_lines( matrix, s, c )
 print("\n making new matrix, m3:\n")
 mat=new_matrix()
-mat[0]=[45,450,20,1]
-mat[1]=[452,378,20,1]
+mat[0]=[5,0,20,1]
+mat[1]=[4,3,2,1]
 #draw_lines(matrix,s,c)
-mat[2]=[452,378,20,1]
-mat[3]=[468,26,20,1]
+mat[2]=[2,7,6,1]
+mat[3]=[4,6,9,1]
 #draw_lines(matrix,s,c)
 #mat[4]=[468,26,20,1]
 #mat[5]=[16,40,20,1]
@@ -94,9 +94,15 @@ mat[3]=[468,26,20,1]
 #mat[6]=[16,40,20,1]
 #mat[7]=[45,450,20,1]
 print_matrix(mat)
-print("\n multiplyinh m3 and m1:\n")
-matrix_mult(mat,matrix)
-print_matrix(matrix)
+
+print("\nmaking new matrix, m4\n")
+m=new_matrix(4,2)
+m[0]=[1,2,3,1]
+m[1]=[2,3,1,1]
+print_matrix(m)
+print("\n multiplyinh m3 and m4:\n")
+matrix_mult(mat,m)
+print_matrix(m)
 display(s)
 
 save_extension(s,'img.png')
