@@ -3,10 +3,12 @@ from draw import *
 from matrix import *
 import math
 import random
-
+print("\nimg.png\n\n")
 s = new_screen()
 c = [ 0, 255, 0 ]
+print("matrix m1=:\n")
 matrix = new_matrix()
+print_matrix(matrix)
 #p1 45,390
 #p2 452,390
 #p3 468,26
@@ -53,11 +55,15 @@ def land(m,count):
 #c=[255,0,0]
 #plot(s,c,0,0)
 
-
+print("\nmaking identity matrix, m2:\n")
 identity = new_matrix()
 ident(identity)
+print_matrix(identity)
 
+print("\ntesting add edge. Adding: (50 450 0)(100 450 0) to m1:\n")
 add_edge(matrix, 50, 450, 0, 100, 450, 0);
+print_matrix(matrix)
+print("\nadded more edges\n")
 add_edge(matrix, 50, 450, 0, 50, 400, 0);
 add_edge(matrix, 100, 450, 0, 100, 400, 0);
 add_edge(matrix, 100, 400, 0, 50, 400, 0);
@@ -75,11 +81,14 @@ add_edge(matrix, 100, 340, 0, 200, 340, 0);
 add_edge(matrix, 100, 320, 0, 200, 320, 0);
 add_edge(matrix, 100, 340, 0, 100, 320, 0);
 add_edge(matrix, 200, 340, 0, 200, 320, 0);
+print("\n after adding a lot of edges, m1:")
+print_matrix(matrix)
 
+print("\nMultiplying identity matrix, m1, with matrix m2:\n")
 matrix_mult(identity, matrix)
 
 print_matrix(matrix)
-print("img.png")
+
 draw_lines( matrix, s, c )
 
 display(s)
