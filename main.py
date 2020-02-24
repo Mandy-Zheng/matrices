@@ -6,9 +6,9 @@ import random
 print("\nimg.png\n\n")
 s = new_screen()
 c = [ 0, 255, 0 ]
-print("matrix m1=:\n")
+print("making empty matrix m1\n")
 matrix = new_matrix(4,0)
-print_matrix(matrix)
+#print_matrix(matrix)
 #p1 45,390
 #p2 452,390
 #p3 468,26
